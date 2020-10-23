@@ -223,7 +223,7 @@ ol {
   background-color: #a70606;
 } */
 
-/*** HOME SECTION ***/
+/*** HOME COMPONENT ***/
 .home {
   width: 100%;
   min-height: 100vh;
@@ -249,7 +249,19 @@ h3 {
 }
 
 .home-logo {
-  width: 30%;
+  width: 20%;
+  position: absolute;
+  left: 41%;
+  top: 31%;
+}
+
+.home-logo-item {
+  width: 5rem;
+  transition: all 0.3s ease-in;
+}
+
+.home-logo-item:hover {
+  width: 6.5rem;
 }
 
 .home-link {
@@ -260,6 +272,220 @@ h3 {
 .home-link:hover {
   color: #4457ff;
 }
+
+/** home nav **/
+.home-nav-container {
+  position: relative;
+}
+
+.home-nav {
+  /* Position */
+  position: absolute;
+  top: 0;
+
+  /* Must have the same size as the trigger element */
+  height: 32px;
+  width: 32px;
+}
+
+.home-nav-inner {
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  /* Take full size */
+  height: 100%;
+  width: 100%;
+}
+
+.home-nav-inner a {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  font-weight: 800;
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+/* .home-nav-inner a:hover {
+  color: #0296bb;
+  text-decoration: underline;
+} */
+
+/** home nav item 01**/
+.item-01 {
+  /*
+  80px is the distance from the item to the trigger element.
+  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is 360 / numberOfItems * indexOfItem
+  */
+  transform: rotate(0deg) translateX(-260px);
+}
+
+.inner-item-01 {
+  /*
+  Rotate it to make it displayed vertically
+  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is -(360 / numberOfItems * indexOfItem)
+  */
+  transform: rotate(-0deg);
+}
+
+/* .inner-item-01 a:hover {
+  color: #f06529;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
+
+/** home nav item 02 **/
+.item-02 {
+  /*
+  80px is the distance from the item to the trigger element.
+  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is 360 / numberOfItems * indexOfItem
+  */
+  transform: rotate(60deg) translateX(-260px);
+}
+
+.inner-item-02 {
+  /*
+  Rotate it to make it displayed vertically
+  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is -(360 / numberOfItems * indexOfItem)
+  */
+  transform: rotate(-60deg);
+}
+
+/* .inner-item-02 a:hover {
+  color: #2965f1;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
+
+/** home nav item 03 **/
+.item-03 {
+  /*
+  80px is the distance from the item to the trigger element.
+  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is 360 / numberOfItems * indexOfItem
+  */
+  transform: rotate(120deg) translateX(-260px);
+}
+
+.inner-item-03 {
+  /*
+  Rotate it to make it displayed vertically
+  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is -(360 / numberOfItems * indexOfItem)
+  */
+  transform: rotate(-120deg);
+}
+
+/* .inner-item-03 a:hover {
+  color: #f0db4f;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
+
+/** home nav item 04 **/
+.item-04 {
+  /*
+  80px is the distance from the item to the trigger element.
+  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is 360 / numberOfItems * indexOfItem
+  */
+  transform: rotate(180deg) translateX(-260px);
+}
+
+.inner-item-04 {
+  /*
+  Rotate it to make it displayed vertically
+  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is -(360 / numberOfItems * indexOfItem)
+  */
+  transform: rotate(-180deg);
+}
+
+/* .inner-item-04 a:hover {
+  color: #474a8a;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
+
+/** home nav item 05 **/
+.item-05 {
+  /*
+  80px is the distance from the item to the trigger element.
+  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is 360 / numberOfItems * indexOfItem
+  */
+  transform: rotate(240deg) translateX(-260px);
+}
+
+.inner-item-05 {
+  /*
+  Rotate it to make it displayed vertically
+  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is -(360 / numberOfItems * indexOfItem)
+  */
+  transform: rotate(-240deg);
+}
+
+/* .inner-item-05 a:hover {
+  color: #61dbfb;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
+
+/** home nav item 06 **/
+.item-06 {
+  /*
+  80px is the distance from the item to the trigger element.
+  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is 360 / numberOfItems * indexOfItem
+  */
+  transform: rotate(300deg) translateX(-260px);
+}
+
+.inner-item-06 {
+  /*
+  Rotate it to make it displayed vertically
+  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is -(360 / numberOfItems * indexOfItem)
+  */
+  transform: rotate(-300deg);
+}
+
+/* .inner-item-06 a:hover {
+  color: #42b883;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
 
 /*** ABOUT SECTION ***/
 .about {
