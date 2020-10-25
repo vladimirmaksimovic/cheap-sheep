@@ -7,8 +7,8 @@ import Js from "./../pages/Js"
 import Php from "./../pages/Php"
 import ReactJs from "./../pages/ReactJs"
 import VueJs from "./../pages/VueJs"
-import TodoApp from "./../pages/TodoApp"
-import About from "./../pages/About"
+/* import TodoApp from "./../pages/TodoApp" */
+/* import About from "./../pages/About" */
 
 function Main() {
   return (
@@ -20,8 +20,8 @@ function Main() {
       <Route path='/php' component={Php} />
       <Route path='/reactjs' component={ReactJs} />
       <Route path='/vuejs' component={VueJs} />
-      <Route path='/todoapp' component={TodoApp} />
-      <Route path='/about' component={About} />
+      {/* <Route path='/todoapp' component={TodoApp} /> */}
+      {/* <Route path='/about' component={About} /> */}
     </main>
   )
 }

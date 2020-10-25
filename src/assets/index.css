@@ -7,12 +7,13 @@
 
 /*** GENERAL STYLES ***/
 body {
+  background-color: #ebebeb;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   color: #2f2f2f;
   line-height: 1.4;
   letter-spacing: 2px;
-  background-image: linear-gradient(to top right, #0689fc, #e6f0f8);
+  /* background-image: linear-gradient(to top right, #0689fc, #e6f0f8); */
 }
 
 h1,
@@ -96,6 +97,7 @@ button:hover {
 
 /** NAVBAR SECTION **/
 .navbar {
+  /* height: 6rem; */
   position: fixed;
   top: 0;
   left: 0;
@@ -105,9 +107,11 @@ button:hover {
 }
 
 .navbar ul {
+  height: 6rem;
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  font-size: 4rem;
 }
 
 .navbar ul li {
@@ -123,18 +127,51 @@ button:hover {
   justify-content: center;
 }
 
-.navbar ul li a:hover {
-  color: #00d9ff;
+/* .navbar ul li a:hover {
+  color: #ffc400;
+  border-bottom: 3px solid #ebebeb;
+} */
+
+.navbar-brand {
+  margin-right: auto;
 }
 
-.logo-container {
+.navbar-brand i:hover {
+  color: #bf98e4;
+}
+
+.navbar-link-01 i:hover {
+  color: #f06529;
+}
+
+.navbar-link-02 i:hover {
+  color: #2965f1;
+}
+
+.navbar-link-03 i:hover {
+  color: #f0db4f;
+}
+
+.navbar-link-04 i:hover {
+  color: #787cb5;
+}
+
+.navbar-link-05 i:hover {
+  color: #61dbfb;
+}
+
+.navbar-link-06 i:hover {
+  color: #42b883;
+}
+
+/* .logo-container {
   margin-right: auto;
 }
 
 .logo {
   height: 4.5rem;
   pointer-events: none;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .logo {
@@ -154,7 +191,7 @@ button:hover {
 /*** MAIN SECTION ***/
 /* Style page content */
 .main {
-  margin-top: 6rem;
+  margin-top: 6.7rem;
   /* margin-left: 22rem; */ /* Same as the width of the sidebar */
   padding: 0px 10px;
 }

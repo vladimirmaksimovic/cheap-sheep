@@ -1,43 +1,53 @@
 import React from "react"
 import { Link, NavLink } from "react-router-dom"
-import logo from "./../assets/images/logo.svg"
+/* import logo from "./../assets/images/logo.svg" */
 
 export default function Navbar() {
   return (
-    <div>
-      <nav className='navbar'>
-        <ul>
-          <li className='logo-container'>
-            <Link to='/'>
-              <img src={logo} className='logo' alt='logo' />
-            </Link>
-          </li>
-          <li>
-            <NavLink to='/html'>HTML5</NavLink>
-          </li>
-          <li>
-            <NavLink to='/css'>CSS3</NavLink>
-          </li>
-          <li>
-            <NavLink to='/js'>JS</NavLink>
-          </li>
-          <li>
-            <NavLink to='/php'>PHP</NavLink>
-          </li>
-          <li>
-            <NavLink to='/reactjs'>React</NavLink>
-          </li>
-          <li>
-            <NavLink to='/vuejs'>Vue</NavLink>
-          </li>
-          <li>
-            <NavLink to='/todoapp'>Todo App</NavLink>
-          </li>
-          <li>
+    <nav className='navbar'>
+      <ul>
+        <li className='navbar-brand'>
+          <Link to='/'>
+            <i class='fas fa-code'></i>
+          </Link>
+        </li>
+        <li className='navbar-link-01'>
+          <NavLink to='/html'>
+            <i class='fab fa-html5'></i>
+          </NavLink>
+        </li>
+        <li className='navbar-link-02'>
+          <NavLink to='/css'>
+            <i class='fab fa-css3-alt'></i>
+          </NavLink>
+        </li>
+        <li className='navbar-link-03'>
+          <NavLink to='/js'>
+            <i class='fab fa-js-square'></i>
+          </NavLink>
+        </li>
+        <li className='navbar-link-04'>
+          <NavLink to='/php'>
+            <i class='fab fa-php'></i>
+          </NavLink>
+        </li>
+        <li className='navbar-link-05'>
+          <NavLink to='/reactjs'>
+            <i class='fab fa-react'></i>
+          </NavLink>
+        </li>
+        <li className='navbar-link-06'>
+          <NavLink to='/vuejs'>
+            <i class='fab fa-vuejs'></i>
+          </NavLink>
+        </li>
+        {/* <li>
+          <NavLink to='/todoapp'>Todo App</NavLink>
+        </li> */}
+        {/* <li>
             <NavLink to='/about'>About</NavLink>
-          </li>
-        </ul>
-      </nav>
-    </div>
+          </li> */}
+      </ul>
+    </nav>
   )
 }
