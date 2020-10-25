@@ -13,7 +13,22 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <NavLink to='/lessons'>Lessons</NavLink>
+            <NavLink to='/html'>HTML5</NavLink>
+          </li>
+          <li>
+            <NavLink to='/css'>CSS3</NavLink>
+          </li>
+          <li>
+            <NavLink to='/js'>JS</NavLink>
+          </li>
+          <li>
+            <NavLink to='/php'>PHP</NavLink>
+          </li>
+          <li>
+            <NavLink to='/reactjs'>React</NavLink>
+          </li>
+          <li>
+            <NavLink to='/vuejs'>Vue</NavLink>
           </li>
           <li>
             <NavLink to='/todoapp'>Todo App</NavLink>
