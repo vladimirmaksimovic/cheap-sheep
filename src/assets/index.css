@@ -7,11 +7,12 @@
 
 /*** GENERAL STYLES ***/
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
   color: #2f2f2f;
   line-height: 1.4;
-  background-color: #ebebeb;
+  letter-spacing: 5px;
+  background-image: linear-gradient(to top right, #0689fc, #e6f0f8);
 }
 
 h1,
@@ -224,26 +225,210 @@ ol {
 } */
 
 /*** HOME COMPONENT ***/
-.home {
+
+/* HOME PAGE GRID LAYOUT */
+.grid-container {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+}
+.grid-container h1 {
+  padding: 3rem 0 0 0;
+  height: fit-content;
+  font-size: 6rem;
+  text-align: center;
+  /* color: #0689fc; */
+}
+
+.home-page-center-img {
+  width: 16rem;
+  height: 16rem;
+  margin: auto;
+}
+
+.grid-container > div {
+  background: url(./images/bg01.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 12px;
+  /* border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px; */
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in;
+  /* border: 1px solid #fff; */
+}
+
+/* .grid-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(0.98);
+} */
+
+/* .grid-item:nth-child(odd) {
+  
+} */
+
+.grid-item > img {
+  width: 30%;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: aqua;
+  /* background: url(./images/bg02.jpg) !important;
+  background-size: cover !important; */
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: olive;
+  background: url(./images/bg02.jpg) !important;
+  background-size: cover !important;
+}
+
+.div2:hover:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(0.99);
+}
+
+.div4:hover,
+.div5:hover,
+.div9:hover,
+.div10:hover,
+.div12:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(0.99);
+}
+
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: orchid;
+  /* background: url(./images/bg03.jpg) !important;
+  background-size: cover !important; */
+}
+
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: sandybrown;
+  background: url(./images/bg03.jpg) !important;
+  background-size: cover !important;
+}
+
+/* .div4:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(0.99);
+} */
+
+.div5 {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: rgb(74, 177, 96);
+  background: url(./images/bg07.jpg) !important;
+  background-size: cover !important;
+}
+
+/* .div5:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(0.99);
+} */
+
+.div6 {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: rgb(4, 0, 255);
+  /* background: url(./images/bg07.jpg) !important;
+  background-size: cover !important; */
+}
+
+.div7 {
+  grid-area: 2 / 2 / 4 / 4;
+  background-color: rgb(255, 0, 0);
+  color: #e6f0f8;
+  flex-direction: column;
+}
+
+.div8 {
+  grid-area: 2 / 4 / 3 / 5;
+  background-color: rgb(255, 230, 0);
+}
+
+.div9 {
+  grid-area: 3 / 4 / 4 / 5;
+  background-color: rgb(0, 255, 157);
+  background: url(./images/bg04.jpg) !important;
+  background-size: cover !important;
+}
+
+/* .div9:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(0.99);
+} */
+
+.div10 {
+  grid-area: 4 / 1 / 5 / 2;
+  background-color: rgb(255, 0, 212);
+  background: url(./images/bg06.jpg) !important;
+  background-size: cover !important;
+}
+
+/* .div10:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(0.99);
+} */
+
+.div11 {
+  grid-area: 4 / 2 / 5 / 3;
+  background-color: rgb(0, 183, 255);
+}
+
+.div12 {
+  grid-area: 4 / 3 / 5 / 4;
+  background-color: rgb(0, 255, 157);
+  background: url(./images/bg05.jpg) !important;
+  background-size: cover !important;
+}
+
+/* .div12:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(0.99);
+} */
+
+.div13 {
+  grid-area: 4 / 4 / 5 / 5;
+  background-color: rgb(60, 87, 87);
+}
+
+.home-page-center-img {
+  filter: invert(100%);
+}
+
+/* .home {
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  /* color: #ebebeb; */
-  /* background-image: url("./images/pexels-asad-photo-maldives-457881\(1\).jpg"); */
-  /* background-image: url("./images/pexels-emre-kuzu-3385455.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
-}
+} */
 
-.home h1,
+/* .home h1,
 h3 {
   padding: 2rem 0;
 }
@@ -271,42 +456,42 @@ h3 {
 
 .home-link:hover {
   color: #4457ff;
-}
+} */
 
 /** home nav **/
-.home-nav-container {
+/* .home-nav-container {
   position: relative;
-}
+} */
 
-.home-nav {
-  /* Position */
-  position: absolute;
-  top: 0;
+/* .home-nav { */
+/* Position */
+/*   position: absolute;
+  top: 0; */
 
-  /* Must have the same size as the trigger element */
-  height: 32px;
+/* Must have the same size as the trigger element */
+/*   height: 32px;
   width: 32px;
-}
+} */
 
-.home-nav-inner {
-  /* Center the content */
-  align-items: center;
+/* .home-nav-inner { */
+/* Center the content */
+/*   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: center; */
 
-  /* Take full size */
-  height: 100%;
+/* Take full size */
+/*   height: 100%;
   width: 100%;
-}
+} */
 
-.home-nav-inner a {
+/* .home-nav-inner a {
   font-family: "Courier New", Courier, monospace;
   font-size: 3rem;
   letter-spacing: 4px;
   font-weight: 800;
   color: #2f2f2f;
   text-decoration: none;
-}
+} */
 
 /* .home-nav-inner a:hover {
   color: #0296bb;
@@ -314,173 +499,27 @@ h3 {
 } */
 
 /** home nav item 01**/
-.item-01 {
-  /*
+/*.item-01 {
   80px is the distance from the item to the trigger element.
   Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
   in case you want to have a total of 6 menu items.
   The formulation is 360 / numberOfItems * indexOfItem
-  */
+  
   transform: rotate(0deg) translateX(-260px);
-}
+}*/
 
-.inner-item-01 {
-  /*
+/*.inner-item-01 {
+  
   Rotate it to make it displayed vertically
   Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
   in case you want to have a total of 6 menu items.
   The formulation is -(360 / numberOfItems * indexOfItem)
-  */
+
   transform: rotate(-0deg);
-}
+}  */
 
 /* .inner-item-01 a:hover {
   color: #f06529;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: underline;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-} */
-
-/** home nav item 02 **/
-.item-02 {
-  /*
-  80px is the distance from the item to the trigger element.
-  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
-  in case you want to have a total of 6 menu items.
-  The formulation is 360 / numberOfItems * indexOfItem
-  */
-  transform: rotate(60deg) translateX(-260px);
-}
-
-.inner-item-02 {
-  /*
-  Rotate it to make it displayed vertically
-  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
-  in case you want to have a total of 6 menu items.
-  The formulation is -(360 / numberOfItems * indexOfItem)
-  */
-  transform: rotate(-60deg);
-}
-
-/* .inner-item-02 a:hover {
-  color: #2965f1;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: underline;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-} */
-
-/** home nav item 03 **/
-.item-03 {
-  /*
-  80px is the distance from the item to the trigger element.
-  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
-  in case you want to have a total of 6 menu items.
-  The formulation is 360 / numberOfItems * indexOfItem
-  */
-  transform: rotate(120deg) translateX(-260px);
-}
-
-.inner-item-03 {
-  /*
-  Rotate it to make it displayed vertically
-  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
-  in case you want to have a total of 6 menu items.
-  The formulation is -(360 / numberOfItems * indexOfItem)
-  */
-  transform: rotate(-120deg);
-}
-
-/* .inner-item-03 a:hover {
-  color: #f0db4f;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: underline;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-} */
-
-/** home nav item 04 **/
-.item-04 {
-  /*
-  80px is the distance from the item to the trigger element.
-  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
-  in case you want to have a total of 6 menu items.
-  The formulation is 360 / numberOfItems * indexOfItem
-  */
-  transform: rotate(180deg) translateX(-260px);
-}
-
-.inner-item-04 {
-  /*
-  Rotate it to make it displayed vertically
-  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
-  in case you want to have a total of 6 menu items.
-  The formulation is -(360 / numberOfItems * indexOfItem)
-  */
-  transform: rotate(-180deg);
-}
-
-/* .inner-item-04 a:hover {
-  color: #474a8a;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: underline;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-} */
-
-/** home nav item 05 **/
-.item-05 {
-  /*
-  80px is the distance from the item to the trigger element.
-  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
-  in case you want to have a total of 6 menu items.
-  The formulation is 360 / numberOfItems * indexOfItem
-  */
-  transform: rotate(240deg) translateX(-260px);
-}
-
-.inner-item-05 {
-  /*
-  Rotate it to make it displayed vertically
-  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
-  in case you want to have a total of 6 menu items.
-  The formulation is -(360 / numberOfItems * indexOfItem)
-  */
-  transform: rotate(-240deg);
-}
-
-/* .inner-item-05 a:hover {
-  color: #61dbfb;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: underline;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-} */
-
-/** home nav item 06 **/
-.item-06 {
-  /*
-  80px is the distance from the item to the trigger element.
-  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
-  in case you want to have a total of 6 menu items.
-  The formulation is 360 / numberOfItems * indexOfItem
-  */
-  transform: rotate(300deg) translateX(-260px);
-}
-
-.inner-item-06 {
-  /*
-  Rotate it to make it displayed vertically
-  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
-  in case you want to have a total of 6 menu items.
-  The formulation is -(360 / numberOfItems * indexOfItem)
-  */
-  transform: rotate(-300deg);
-}
-
-/* .inner-item-06 a:hover {
-  color: #42b883;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: underline;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
