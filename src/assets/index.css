@@ -240,12 +240,15 @@ ol {
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 20rem; /* Set the width of the sidebar */
-  padding-top: 6rem;
+  margin: 6rem 0 0 0;
+  padding-top: 2rem;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: rgba(17, 17, 17, 0.9); /* Black */
+  /* background: linear-gradient(90deg, #61dbfb 0%, #182848 100%); */
+  background-color: #1f232a;
+  /* background-color: rgba(17, 17, 17, 0.9); */ /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
