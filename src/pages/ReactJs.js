@@ -13,18 +13,20 @@ import Lesson09 from "../components/lessons/Lesson09"
 
 function ReactJs() {
   return (
-    <section className='lessons'>
+    <div className='content'>
       <Sidenav />
-      <Lesson01 />
-      <Lesson02 />
-      <Lesson03 />
-      <Lesson04 />
-      <Lesson05 />
-      <Lesson06 />
-      <Lesson07 />
-      <Lesson08 />
-      <Lesson09 />
-    </section>
+      <section className='lessons'>
+        <Lesson01 />
+        <Lesson02 />
+        <Lesson03 />
+        <Lesson04 />
+        <Lesson05 />
+        <Lesson06 />
+        <Lesson07 />
+        <Lesson08 />
+        <Lesson09 />
+      </section>
+    </div>
   )
 }
 
